@@ -1,4 +1,4 @@
-package intro;
+package intro;//this is a package declaration
 
 public class IntroMain {
 
