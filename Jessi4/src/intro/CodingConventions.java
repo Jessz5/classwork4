@@ -14,7 +14,7 @@ public class CodingConventions {
 	* therefore the name of a constructor must always
 	* match the name of the class
 	*/
-	public CodingConventions(string name, int index) {
+	public CodingConventions(String name, int index) {
 		//In Java, fields are instantiated in a constructor
 		
 		//there is a local variable called 'name' and a field called'name
