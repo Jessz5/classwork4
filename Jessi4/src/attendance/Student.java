@@ -43,16 +43,16 @@ public class Student implements Attendee{
 		if(studentPresent) {
 			x = "PRESENT";
 		}
-		String tempFirstName = firstName;
+		String tFirstName = firstName;
 		if (firstName.length() > 20)
 		{
-			tempFirstName = firstName.substring(0,  17) + "...";
+			tFirstName = firstName.substring(0,  17) + "...";
 		}
-		String tempLastName = lastName;
+		String tLastName = lastName;
 		if (lastName.length() > 20)
 		{
-			tempLastName = lastName.substring(0,  17) + "...";
+			tLastName = lastName.substring(0,  17) + "...";
 		}
-		return String.format("%-20s%-20s%-20s\n", tempFirstName, tempLastName, x);
+		return String.format("%-20s%-20s%-20s\n", tFirstName, tLastName, x);
 	}
 }
