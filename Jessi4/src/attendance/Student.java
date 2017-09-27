@@ -16,7 +16,7 @@ public class Student implements Attendee{
 	}
 	
 	public void setPresent(boolean present) {
-		studentPresent = present;
+		this.studentPresent = present;
 	}
 	
 	public String getFirstName() {
@@ -30,6 +30,7 @@ public class Student implements Attendee{
 	public boolean mathces(String first, String last)
 	{
 		return (first.equalsIgnoreCase(firstName) && last.equalsIgnoreCase(lastName));
+		//return first.toLowerCase().equals(firstName.toLowerCase()) && last.toLowerCase().equals(lastName.toLowerCase());
 	}
 	
 	public boolean matches(String last)
