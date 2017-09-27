@@ -1,6 +1,6 @@
 package attendance;
 
-public class Student {
+public class Student implements Attendee{
 	private String firstName;
 	private String lastName;
 	private boolean studentPresent;
@@ -29,16 +29,30 @@ public class Student {
 	
 	public boolean mathces(String first, String last)
 	{
-		return (first == firstName && last == lastName);
+		return (first.equalsIgnoreCase(firstName) && last.equalsIgnoreCase(lastName));
 	}
 	
 	public boolean matches(String last)
 	{
-		return (last == lastName);
+		return (last.equalsIgnoreCase(lastName));
 	}
 	
 	public String getReportString()
 	{
-		return String.format("%s%20s%s", firstName, " ", lastName);
+		String x = "ABSENT";
+		if(studentPresent) {
+			x = "PRESENT";
+		}
+		String tempFirstName = firstName;
+		if (firstName.length() > 20)
+		{
+			tempFirstName = firstName.substring(0,  17) + "...";
+		}
+		String tempLastName = lastName;
+		if (lastName.length() > 20)
+		{
+			tempLastName = lastName.substring(0,  17) + "...";
+		}
+		return String.format("%-20s%-20s%-20s\n", tempFirstName, tempLastName, x);
 	}
 }
