@@ -33,7 +33,7 @@ public class ArraysMain {
 	
 	public int countLessThan(int[] arr, int n) {
 		int count = 0;
-		for(int vale: arr) {
+		for(int value: arr) {
 			if(value < n)count++;
 		}
 		return count;
@@ -94,7 +94,8 @@ public class ArraysMain {
 	}
 	
 	public int[] longestConsecSeqAndPos(int[] arr) {
-		int[] data = new int[2];
+		int[] output = new int[longestConsecutiveSequence(arr)];
+		for(int i = 0; i < longestConsecutiveSequence(arr); i++) {
 		
 		return data;
 	}
