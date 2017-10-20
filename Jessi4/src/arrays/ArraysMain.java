@@ -16,8 +16,8 @@ public class ArraysMain {
 		//System.out.println("The longest sequence in the first test is " + longestConsecutiveSequence(consecTest1));
 		//System.out.println("The longest sequence in the second test is " + longestConsecutiveSequence(consecTest2));
 		//System.out.println("The longest sequence in the third test is " + longestConsecutiveSequence(randomRolls));
-		int[] result = longestConsecSeqAndPos(randomRolls);
-		System.out.println("The longest sequence of dice rolls is " + result[0] + " it happened on the " + (result[1]+1) + "th roll. Starting with a roll of "+randomRolls[result[1]]+".");
+		//int[] result = longestConsecSeqAndPos(randomRolls);
+		//System.out.println("The longest sequence of dice rolls is " + result[0] + " it happened on the " + (result[1]+1) + "th roll. Starting with a roll of "+randomRolls[result[1]]+".");
 		
 		//intRay = new int[100];
 		//populate(intRay);
@@ -93,12 +93,12 @@ public class ArraysMain {
 		return count;
 	}
 	
-	public int[] longestConsecSeqAndPos(int[] arr) {
-		int[] output = new int[longestConsecutiveSequence(arr)];
-		for(int i = 0; i < longestConsecutiveSequence(arr); i++) {
+	//public int[] longestConsecSeqAndPos(int[] arr) {
+		//int[] output = new int[longestConsecutiveSequence(arr)];
+		//for(int i = 0; i < longestConsecutiveSequence(arr); i++) {
 		
-		return data;
-	}
+		//return data;
+//	}
 	
 	public boolean isConsecutive(int[] arr, int pos) {
 		if(arr[pos+1] == arr[pos]+1) {

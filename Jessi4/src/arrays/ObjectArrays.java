@@ -29,6 +29,11 @@ public class ObjectArrays {
 		//returns a random subgroup of Person from population with no repeats, length "length"
 	}
 	
+	private Person selectAPerson(Person[] population) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	/**
 	 * return the number of differences between the two arrays
 	 * A "difference" means they don't have the same element
