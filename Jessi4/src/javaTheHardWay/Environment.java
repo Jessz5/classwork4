@@ -21,7 +21,7 @@ public class Environment {
 		System.out.println("\n There are "+plants+" plants.");
 	}
 	
-	public boolean eatplants() {
+	public boolean eatPlants() {
 		if(plants > 0) {
 			plants --;
 			return true;
