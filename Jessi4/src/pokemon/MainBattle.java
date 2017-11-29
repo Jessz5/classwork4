@@ -39,6 +39,12 @@ public class MainBattle {
 			 public void happen() {
 				 squirtle
 			 }
+
+			@Override
+			public void happens() {
+				// TODO Auto-generated method stub
+				
+			}
 		 });
 		 }
 
